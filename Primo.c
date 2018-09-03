@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <math.h>
+#include <stdlib.h>
 
 int ehPrimo(long int numero)
 {
@@ -15,7 +16,7 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
     long int num, x;
-    printf("Digite um número inteiro: ");
+    printf("Digite um nÃºmero inteiro: ");
     scanf("%ld", &num);
     for(x=1; x<=num; x++)
         if (ehPrimo(x)) printf("%ld\t", x);
